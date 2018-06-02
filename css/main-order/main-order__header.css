@@ -1,0 +1,51 @@
+.main-order__header{
+    padding-bottom: 2px;
+    background-color: var(--theme-main-color);
+}
+
+.main-order__header_wrapper{
+    padding: 44px 34px 0 34px;
+    border: 2px;
+}
+
+.main-order__header-title{
+    text-align: center;
+    display: block;
+    color: var(--theme-secondary-text-color);
+    font-size: 15px;
+    padding: 8px 0;
+    width: 100%;
+    border-bottom: 1px solid var(--theme-accent-border-color);
+
+}
+
+.main-order__header__menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main-order__header__menu li {
+    float: left;
+}
+
+.main-order__header__menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+.main-order__header__menu li a.active {
+    background-color: var(--theme-accent-color);
+
+}
+/* Change the link color to #111 (black) on hover */
+.main-order__header__menu li a:hover {
+    background-color: var(--theme-main-light-border-color);
+
+}

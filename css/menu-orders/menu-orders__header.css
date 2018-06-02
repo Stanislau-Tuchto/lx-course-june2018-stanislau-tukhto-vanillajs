@@ -1,0 +1,63 @@
+.menu-orders__header{
+    height: 68px;
+    border-bottom: 1px solid var(--theme-main-light-border-color);
+    background-color: #fff;
+    padding: 6px 3px 3px 4px;
+}
+.menu-orders__header-title{
+    text-align: center;
+    color: var(--theme-secondary-text-color);
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+.menu-orders__header-title a{
+
+    text-decoration: none;
+    color: inherit;
+}
+.menu-orders__header-title::before{
+    content: "";
+    border: solid var(--theme-accent-color);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    right: 100px;
+    position: relative;
+}
+.menu-orders__header-title:hover::before{
+    cursor: pointer;
+}
+.menu-orders__header__search{
+    border: 1px solid var(--theme-main-strong-border-color);
+    height: 26px;
+    width: 312px;
+    position:relative;
+
+    padding: 2px 3px 2px 12px;
+    font-size: 15px;
+    background: url(images/comment-author.gif) no-repeat scroll 7px 7px;
+
+}
+.menu-orders__header__search input{
+    font-style: italic;
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    width: 240px; /* Ширина поля */
+    vertical-align: middle; /* Выравнивание по середине */
+}
+
+.menu-orders__header i{
+    color: var(--theme-accent-color);
+    position: relative;
+    left: 15px;
+    top:2px;
+}
+.menu-orders__header i.fa-search{
+    left: 0px;
+}
+.menu-orders__header i:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+.menu-orders__footer{
+    height: 40px;
+    background: var(--theme-secondary-color);
+    color: var(--theme-footer-text-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+}
+.menu-orders__footer .fa-filter{
+    margin-right:25px;
+}
+.menu-orders__footer .fa-align-justify{
+    margin-right:15px;
+}
+.menu-orders__footer .fas:hover{
+    cursor: pointer;
+}
