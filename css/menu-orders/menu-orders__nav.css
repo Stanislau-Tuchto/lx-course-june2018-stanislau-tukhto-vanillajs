@@ -30,7 +30,7 @@
 
 .menu-orders__nav li {
     border-bottom: 1px solid var(--theme-main-light-border-color);
-    min-height: 118px;
+    min-height: 116px;
 
 }
 .menu-orders__nav li:last-child {
@@ -42,12 +42,12 @@
     align-items: center;
     justify-content:space-between;
     color: #000;
-    min-height: 118px;
+    min-height: 116px;
     text-decoration: none;
-    padding: 4px 16px 19px 17px;
+    padding: 4px 17px 17px 17px;
 }
 .menu-orders__nav li a > *{
-    margin:9px 0 0 0;
+    margin: 6px 0 0 0;
     flex-grow: 1;
     width: calc(100% * (1/2) - 9px)
 }
@@ -55,7 +55,7 @@
     display: block;
 }
 .menu-orders__nav-createdAt{
-    font-size: 24px;
+    font-size: 23px;
     letter-spacing: -1px;
     text-align: right;
 }

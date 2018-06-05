@@ -2,12 +2,21 @@
 .menu-orders{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     flex-direction: column;
     width: 320px;
-    min-width: 300px;
-    max-width: 320px;
+    /*min-width: 320px;*/
+    /*max-width: 320px;*/
     height: 100%;
-    min-height: 250px;
     border-right: 1px solid var(--theme-main-light-border-color) ;
+}
 
+.menu-orders:after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: var(--theme-main-light-border-color);
+    height: 4px;
+    right: 0px;
+    top: -4px;
 }

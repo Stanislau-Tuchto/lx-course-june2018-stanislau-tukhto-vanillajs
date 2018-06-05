@@ -1,11 +1,23 @@
 .main-order__header{
-    padding-bottom: 2px;
+    /*padding-bottom: 2px;*/
+    position: relative;
     background-color: var(--theme-main-color);
+    border-bottom: solid 2px var(--theme-accent-border-color);
+    /*padding-bottom: -25px;*/
+}
+.main-order__header:after {
+    content: " ";
+    position: absolute;
+    background: var(--theme-main-color);
+    z-index: 10;
+    height: 2px;
+    width: 100%;
+    bottom: -4px;
 }
 
 .main-order__header_wrapper{
-    padding: 44px 34px 0 34px;
-    border: 2px;
+    padding: 40px 34px 0 34px;
+    /*border: 2px;*/
 }
 
 .main-order__header-title{
@@ -18,34 +30,88 @@
     border-bottom: 1px solid var(--theme-accent-border-color);
 
 }
+.main-order__header__price{
+    font-size: 22px;
+}
+.main-order__header__price-value{
+    float: right;
+    font-weight: normal;
+    position: relative;
+    color: var(--theme-secondary-text-color);
+}
+.main-order__header__price-value:after{
+    content: "EUR";
+    position: absolute;
+    font-size: 12px;
+    bottom: -15px;
+    right: 0;
+}
+.main-order__header__dl{
+    margin-top: 30px;
+}
+.main-order__header__dl div{
+    margin-top: 14px;
+    font-size: 14px;
+    color: var(--theme-secondary-text-color);
+}
+.main-order__header__dl dt, dd{
+    display: inline;
+    margin: 0;
 
+}
+.main-order__header__dl dt::after {
+    content: ": ";
+}
+.main-order__header__menu{
+    margin: 45px 0 0;
+}
 .main-order__header__menu ul {
+    position: relative;
+    top: 2px;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-size: 20px;
+    display: flex;
+
 }
 
 .main-order__header__menu li {
-    float: left;
+    width: 50px;
+    height: 67px;
+    margin-right: 30px;
+    position: relative;
 }
 
 .main-order__header__menu li a {
     display: block;
-    color: white;
     text-align: center;
-    padding: 15px;
     text-decoration: none;
+    position: absolute;
     border-radius: 50%;
+    padding:13px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--theme-accent-color);
+    color: var(--theme-accent-color);
 }
 
-
-.main-order__header__menu li a.active {
+.main-order__header__menu li.active a {
+    color: white;
     background-color: var(--theme-accent-color);
-
 }
-/* Change the link color to #111 (black) on hover */
 .main-order__header__menu li a:hover {
-    background-color: var(--theme-main-light-border-color);
-
+    background-color: white;
+    color: var(--theme-accent-color);
+}
+.main-order__header__menu li.active::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: inherit;
+    z-index: 100;
+    height: 2px;
+    top: 65px;
+    background-color: var(--theme-accent-color);
 }

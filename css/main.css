@@ -2,8 +2,11 @@
 @import url("menu-orders/menu-orders.css") all;
 @import url("menu-orders/menu-orders__header.css") all;
 @import url("menu-orders/menu-orders__nav.css") all;
+@import url("menu-orders/menu-orders__footer.css") all;
 @import url("main-order/main-order.css") all;
 @import url("main-order/main-order__header.css") all;
+@import url("main-order/main-order__section-address.css") all;
+@import url("main-order/main-order__section-items.css") all;
 
 
 

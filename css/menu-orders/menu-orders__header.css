@@ -9,6 +9,7 @@
     color: var(--theme-secondary-text-color);
     font-size: 15px;
     padding-bottom: 15px;
+    padding-right: 10px;
 }
 .menu-orders__header-title a{
 
@@ -20,10 +21,10 @@
     border: solid var(--theme-accent-color);
     border-width: 0 2px 2px 0;
     display: inline-block;
-    padding: 5px;
+    padding: 4px;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
-    right: 100px;
+    right: 90px;
     position: relative;
 }
 .menu-orders__header-title:hover::before{
@@ -35,7 +36,7 @@
     width: 312px;
     position:relative;
 
-    padding: 2px 3px 2px 12px;
+    padding: 3px 3px 1px 12px;
     font-size: 15px;
     background: url(images/comment-author.gif) no-repeat scroll 7px 7px;
 
@@ -52,7 +53,7 @@
 .menu-orders__header i{
     color: var(--theme-accent-color);
     position: relative;
-    left: 15px;
+    left: 13px;
     top:2px;
 }
 .menu-orders__header i.fa-search{

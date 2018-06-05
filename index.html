@@ -29,7 +29,7 @@
                                 <span class="menu-orders__nav-status nav-status_intime">In time</span>
                                 <span class="menu-orders__nav-shippedAt">
                                     Shipped:
-                                    <time datetime="2016-11-25">25 ноябр. 2016 г.</time>
+                                    <time datetime="2016-11-25">25 нояб. 2016 г.</time>
                                 </span>
                             </a>
                         </li>
@@ -153,16 +153,35 @@
             </aside>
 
             <main class="main-order">
+
                 <header class="main-order__header">
                     <h3 class="main-order__header-title">Order</h3>
                     <div class="main-order__header_wrapper">
-                        <h1 class="main-order__header__price">Order <span id="">7918</span></h1>
-                        <strong class="main-order__header__price">150 935,13</strong>
+                        <h1 class="main-order__header__price">
+                            Order
+                            <span id="">7918</span>
+                            <strong class="main-order__header__price-value">150 935,13</strong>
+                        </h1>
+
+                        <dl class="main-order__header__dl">
+                            <div>
+                                <dt>Customer</dt>
+                                <dd>Tortuga Restaurante</dd>
+                            </div>
+                            <div>
+                                <dt>Ordered</dt>
+                                <dd><time datetime="2016-09-18">18 сент. 2016 г.</time></dd>
+                            </div>
+                            <div>
+                                <dt>Shipped</dt>
+                                <dd><time datetime="2016-09-26">26 сент. 2016 г.</time></dd>
+                            </div>
+                        </dl>
 
                         <nav class="main-order__header__menu">
                             <ul>
-                                <li>
-                                    <a href="" class="active">
+                                <li class="active">
+                                    <a href="" >
                                         <i class="fas fa-truck"></i>
                                     </a>
                                 </li>
@@ -175,6 +194,94 @@
                         </nav>
                     </div>
                 </header>
+
+                <section class="main-order__section-address">
+                    <h2 class="main-order__section_title main-order__section-address-title">
+                        Shipping Address
+                    </h2>
+                    <dl class="main-order__section-address__dl">
+                        <div>
+                            <dt>Name</dt>
+                            <dd>ExcellentParcel</dd>
+                        </div>
+                        <div>
+                            <dt>Street</dt>
+                            <dd>Tottenham Court Road</dd>
+                        </div>
+                        <div>
+                            <dt>ZIP Code / City</dt>
+                            <dd>N170AA London</dd>
+                        </div>
+                        <div>
+                            <dt>Region</dt>
+                            <dd>Greater London</dd>
+                        </div>
+                        <div>
+                            <dt>Country</dt>
+                            <dd>United Kingdom</dd>
+                        </div>
+
+                    </dl>
+
+                </section>
+
+                <section class="main-order__section-items">
+                    <h2 class="main-order__section_title main-order__section-items-title">
+                        Line Items (<span id="">4</span>)
+                    </h2>
+
+                    <table class="main-order__section-items-table">
+                        <tr>
+                            <th>product</th>
+                            <th>unit price</th>
+                            <th>quantity</th>
+                            <th>total</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="main-order__section-items-table-product">aniseed syrup</b>
+                                <span id="productId">1412</span>
+                            </td>
+                            <td>
+                                <b class="main-order__section-items-table-price">65.89</b>
+                                <span>EUR</span>
+                            </td>
+                            <td>889</td>
+                            <td><b class="">59235,11</b> <span>EUR</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="main-order__section-items-table-product">tunnbrod</b>
+                                <span id="productId">1412</span></td>
+                            <td><b class="">65.89</b> <span>EUR</span>
+                            </td>
+                            <td>889</td>
+                            <td><b class="">59235,11</b> <span>EUR</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="main-order__section-items-table-product">northwoods cranberry Sause</b>
+                                <span id="productId">1412</span>
+                            </td>
+                            <td><b class="">65.89</b> <span>EUR</span></td>
+                            <td>889</td>
+                            <td><b class="">59235,11</b> <span>EUR</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="main-order__section-items-table-product">Camembert pierrot</b>
+                                <span id="productId">1412</span>
+                            </td>
+                            <td><b class="">65.89</b> <span>EUR</span></td>
+                            <td>889</td>
+                            <td><b class="">59235,11</b> <span>EUR</span></td>
+                        </tr>
+                    </table>
+                </section>
+
+                <footer class="main-order__footer">
+                    <i class="far fa-envelope"></i>
+                </footer>
 
             </main>
         </div>
